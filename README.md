@@ -8,11 +8,11 @@
 HTML・JavaScript
 
 #プログラム担当
-hinarin
-Tako0907
-rodomon8
+hinarin  
+Tako0907  
+rodomon8  
 
 #デザイン担当
-All-Yes
-aoichan
-BIGBOSS42S
+All-Yes  
+aoichan  
+BIGBOSS42S  
