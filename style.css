@@ -1,11 +1,6 @@
-﻿table , td, th {
-	border: 1px solid #595959;
-	border-collapse: collapse;
-}
-td, th {
-	padding: 3px;
-	width: 30px;
-	height: 25px;
+﻿div img{
+	border:10px double #000000;
+	border-radius:30px;
 }
 th {
 	background: #f0e6cc;
@@ -15,4 +10,9 @@ th {
 }
 .odd {
 	background: #fefcf9;
+}
+
+td img	{
+	width:300px;
+	height:150px;
 }
