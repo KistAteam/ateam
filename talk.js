@@ -31,7 +31,7 @@ var cnt = 0;
 
 //朝の場合
 function image_count(){
-	if(cnt==2){
+	if(cnt == 2){
 		cnt = 0;
 	}
 	else{
