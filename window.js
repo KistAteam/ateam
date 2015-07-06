@@ -1,13 +1,14 @@
-var img = "img/window.png";
-var textarea = "せまいです。";
+var window_text = "せまいです。画面幅を最大にして更新してください。";
 
 var width_max = screen.availWidth;
 var width = window.innerWidth;
 
-function window_sereen(){
+window.onload = function window_sereen(){
 	if(width_max > width){
-		document.getElementById("gazo").src=img.src;
+		document.getElementById("table").style.display = "none";
+		var window_img = document.getElementById("gazo");
+		window_img.src = "img/window.png";
 		var text = document.getElementById("text");
-		text.innerHTML = textarea[cnt];
+		text.innerHTML = window_text;
 }
 }
