@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
+
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet"  href="style.css">
@@ -7,17 +8,16 @@
 <script type="text/javascript" src="window.js"></script>
 <title>チーム開発</title>
 </head>
+
 <body>
-<div><img src="img/boy02.png" id="gazo" alt="" ></div>
-<div id="text"><p>挨拶しましょう</p></div>
-<table id="table">
-	<tbody>
-		<tr>
-			<td><a href="#"><img src="img/test.png"alt="" onclick="image_count(),text()"></td></a>
-			<td><a href="#"><img src="img/test2.png"alt="" onclick="image_count(),text()"></td></a>
-			<td><a href="#"><img src="img/test3.png"alt="" onclick="image_count_n(),text()"></td></a>
-		</tr>
-	</tbody>
-</table>
+<div id="screen"><img src="img/boy02.png" id="gazo" alt="" ></div>
+<div id="textarea">
+　<p id="text">挨拶しましょう</p>
+</div>
+　<table id="table">
+ 　　<tr><td><div id="button1" onclick="root1();" ><a href="#"><p id="root1">おはよう</p></a></div></td></tr>
+ 　　<tr><td><div id="button2" onclick="root2();"><a href="#"><p id="root2">こんにちは</p></a></div></td></tr>
+ 　　<tr><td><div id="button3" onclick="root3();"><a href="#"><p id="root3">こんばんは</p></a></div></td></tr>
+　</table>
 </body>
 </html>
