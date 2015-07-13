@@ -64,16 +64,21 @@
 	button_root3[0] = "こんばんは"
 	button_root3[1] = "ルート3を選びました"
 
+/* 終了処理用 */
+var end_img = new Image();
+end_img.src ="img/window.png"
+var end_text = "バイバイ！！";
+
 /* 触れるべからず */
 var cnt = 0;
 
 //root1の場合
 function root1(){
 	if(cnt == 1){
-		cnt = 0;
+		document.getElementById("table").style.display = "none";
 	}
 	else{
-		cnt++;
+	cnt++;
 	}
 	document.getElementById("gazo").src=img_root1[cnt].src;
 	var text = document.getElementById("text");
@@ -89,7 +94,7 @@ function root1(){
 //root2の場合
 function root2(){
 	if(cnt == 1){
-		cnt = 0;
+		document.getElementById("table").style.display = "none";
 	}
 	else{
 		cnt++;
@@ -108,7 +113,7 @@ function root2(){
 //root3の場合
 function root3(){
 	if(cnt==1){
-		cnt = 0;
+		document.getElementById("table").style.display = "none";
 	}
 	else{
 		cnt++;
