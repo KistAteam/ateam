@@ -6,6 +6,7 @@ var width = window.innerWidth;
 window.onload = function window_sereen(){
 	if(width_max > width){
 		document.getElementById("fm").style.display="none";
+		document.getElementById("button").style.display="none";
 		var window_img = document.getElementById("gazo");
 		window_img.src = "img/boy04.png";
 		var text = document.getElementById("text");
