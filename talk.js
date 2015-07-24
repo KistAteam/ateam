@@ -4,10 +4,6 @@ var random = Math.floor(Math.random() * 10);
 //運勢に使う
 var unsei = Math.floor(Math.random() * 5);
 
-//画像の切り替え用
-var img = new Image();
-img.src = "img/result_lose.png";
-
 //質問の配列準備
 var qtn = new Array();
 
