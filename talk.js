@@ -1,6 +1,11 @@
 //質問を呼び出す時に使う
 var random = Math.floor(Math.random() * 7);
 
+//会話のスピード制御
+var speed = 500;		//会話のスピード
+var flag = 1; 			//触れるべからず
+var count = 0;
+
 //運勢に使う
 var unsei = Math.floor(Math.random() * 5);
 
