@@ -11,13 +11,10 @@
 
 <body>
 <div id="screen"><img src="img/boy02.png" id="gazo" alt="" ></div>
-<div id="textarea">
-　<p id="text">挨拶しましょう</p>
-</div>
-　<table id="table">
- 　　<tr><td><div id="button1" onclick="root1();" ><a href="#"><p id="root1">おはよう</p></a></div></td></tr>
- 　　<tr><td><div id="button2" onclick="root2();"><a href="#"><p id="root2">こんにちは</p></a></div></td></tr>
- 　　<tr><td><div id="button3" onclick="root3();"><a href="#"><p id="root3">こんばんは</p></a></div></td></tr>
-　</table>
+<div id="text"><script>question();</script></div>
+<form name="fm" id="fm">
+  <textarea name="tarea"></textarea>
+  <a href="#"><img src="img/button.gif" alt="button" onclick="dispTextarea()"></a>
+</form>
 </body>
 </html>

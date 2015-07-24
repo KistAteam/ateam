@@ -1,19 +1,12 @@
 ﻿body{
 	font-family:"メイリオ","Hiragino Kaku Gothic Pro";
 	margin: 0;
-	background-color:#fff;
-}
-
-p{
-	margin:0;
-}
-
-div{
-	margin-left:auto;
-	margin-right:auto;
+	background-color:#f0f8ff;
 }
 
 #screen{
+	margin-right:auto;
+	margin-left:auto;
 	width:900px;
 	height:600px;
 	background-color:#fff;
@@ -27,81 +20,26 @@ div{
 	border-radius:20px;
 }
 
-#textarea{
-	border:solid 7px #000;
-	background-color:#fff;
-	height:80px;
-	width:80%;
-	margin-top:20px;
-	text-align:center;
-}
-
-#textarea p{
-	font-size:20px
-}
-
-table{
-	margin-left:auto;
+#text{
+	width:600px;
+	height:50px;
+	border:solid 1px #000;
+	margin-top:50px;
 	margin-right:auto;
-	margin-top:15px;
-	margin-bottom:15px;
+	margin-left:auto;
 	background-color:#fff;
-	border:solid 1px #000;
-	border-collapse: collapse;
+}
+
+form{
+	width:400px;
+	height:200px;
+	margin-top:50px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+textarea{
 	width:80%;
-	height:180px;
-}
-
-a{
-	text-decoration:none;
-	display:block;
-	height:60px;
-}
-
-table td{
-	border:solid 1px #000;
-	text-align:left;
-	height:60px;
-}
-
-table td p{
-	color:#000;
+	height:50px;
 	font-size:20px;
-	margin:0;
-}
-
-#button1{
-	background-color:#ffff00;
-}
-
-#button1:hover{
-	background-color:#ffd700;
-}
-
-#root1:active{
-	color:red;
-}
-
-#button2{
-	background-color:#00ff00;
-}
-
-#button2:hover{
-	background-color:#32cd32;
-}
-
-#root2:active{
-	color:red;
-}
-
-#button3{
-	background-color:#1e90ff;
-}
-
-#button3:hover{
-	background-color:#6495ed;
-}
-
-#root3:active{
-	color:red;
 }
