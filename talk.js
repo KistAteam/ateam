@@ -1,58 +1,96 @@
-//配列の準備
-	var img = new Array();
-	var img_s = new Array();
-	var textarea = new Array();
+//質問を呼び出す時に使う
+var random = Math.floor(Math.random() * 7);
 
-/* 朝の場合の画像 */
-	img[0] = new Image();
-	img[0].src = "img/boy02.png";
-	img[1] = new Image();
-	img[1].src = "img/test5.png";
-	img[2] = new Image();
-	img[2].src = "img/screen.png";
+//運勢に使う
+var unsei = Math.floor(Math.random() * 5);
 
+//画像の切り替え用
+var img = new Image();
+img.src = "img/result_lose.png";
 
-/* 夜の場合の画像 */
-	img_s[0] = new Image();
-	img_s[0].src = "img/boy02.png";
-	img_s[1] = new Image();
-	img_s[1].src = "img/test4.png";
-	img_s[2] = new Image();
-	img_s[2].src = "img/screen.png";
+//質問の配列準備
+var qtn = new Array();
 
+//質問集
+qtn[0] = "好きな食べ物は何ですか？";
+qtn[1] = "今の天気はどうですか？";
+qtn[2] = "ご飯何食べましたか？";
+qtn[3] = "今暑いですか？寒いですか？";
+qtn[4] = "今日のあなたのファッション決まっていますか？";
+qtn[5] = "あなたの好きな異性のタイプは何ですか？";
+qtn[6] = "あなたの運勢を占います。";
 
-/* テキストエリア */
-	textarea[0] = "挨拶しましょう";
-	textarea[1] = "見てんじゃねー!!"
-	textarea[2] = "＼(^o^)／  オワタ";
-
-/* 触れるべからず */
-var cnt = 0;
-
-//朝の場合
-function image_count(){
-	if(cnt==2){
-		cnt = 0;
-	}
-	else{
-		cnt++;
-	}
-	document.getElementById("gazo").src=img[cnt].src;
+//質問を表示するメソッドです。触れるべからず！！
+function question(){
+	document.write(qtn[random]);
 }
 
-//夜の場合
-function image_count_n(){
-	if(cnt==2){
-		cnt = 0;
-	}
-	else{
-		cnt++;
-	}
-	document.getElementById("gazo").src=img_s[cnt].src;
-}
+//返答用のメソッド
+function dispTextarea(){
+	var tarea  = document.fm.tarea.value;
+	
+	switch(random){
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+		case 0:
+		document.getElementById("text").innerHTML = tarea+"ですか。おいしいですよね！"+"<br>"+"僕は電気ばっかり食べてますよ！";
+		break;
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+		case 1:
+		document.getElementById("text").innerHTML = "そうですか。こっちは0ときどき1ですね。";
 
-//テキストエリア
-function text(){
-	var text = document.getElementById("text");
-	text.innerHTML = textarea[cnt];
+		break;
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+		case 2:
+		document.getElementById("text").innerHTML = tarea+"ですか。おいしいですよね！"+"<br>"+"僕は電気ばっかり食べてますよ！";
+
+		break;
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+		case 3:
+		if(tarea == "寒い"){
+		document.getElementById("text").innerHTML = tarea+"ですか。今は重い処理をしていないので、僕も寒いです。";
+	}else{
+		document.getElementById("text").innerHTML = "そうですか。今は重い処理をしていないので、僕は寒いです。";
+	}
+		break;
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+		case 4:
+		if(tarea == "はい"){
+			document.getElementById("text").innerHTML = "そうですか。あなたはナルシストなんですね。";
+		}
+		else if(tarea == "いいえ"){
+			document.getElementById("text").innerHTML = "そうですか。あなたは謙虚ですね。";
+		}
+		else{
+			document.getElementById("text").innerHTML = "そうですね。";
+	　		}
+	　		
+	　	break;
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+		case 5:
+			document.getElementById("text").innerHTML = "へー";
+
+		break;
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+		case 6:
+		if(unsei == 0){
+			document.getElementById("text").innerHTML = "大吉です！！おめでとうございます！";
+			img.src ="img/result_lose.png";
+		}
+		else if(unsei == 1){
+			document.getElementById("text").innerHTML = "中吉です！";
+			img.src ="img/result_lose.png";
+		}
+		else if(unsei == 2){
+			document.getElementById("text").innerHTML = "小吉です。";
+			img.src ="img/result_lose.png";
+		}
+		else{
+			document.getElementById("text").innerHTML = "大凶です。";
+			img.src ="img/result_lose.png";
+		}
+		
+		break;
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	
+	}
 }
