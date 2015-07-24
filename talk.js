@@ -1,5 +1,5 @@
 //質問を呼び出す時に使う
-var random = Math.floor(Math.random() * 8);
+var random = Math.floor(Math.random() * 10);
 
 //運勢に使う
 var unsei = Math.floor(Math.random() * 5);
@@ -20,6 +20,8 @@ qtn[4] = "今日のあなたのファッション決まっていますか？";
 qtn[5] = "あなたの好きな異性のタイプは何ですか？";
 qtn[6] = "あなたの運勢を占います。";
 qtn[7] = "あなたの好きなゲームは何ですか？"
+qtn[8] = "目玉焼きにかけるならなにかける？"
+qtn[9] = "君は日本語意外に何語で話せますか？"
 
 //質問を表示するメソッドです。触れるべからず！！
 function question(){
@@ -95,5 +97,33 @@ function dispTextarea(){
 		case 7:
 			document.getElementById("text").innerHTML = tarea+"ですか。それ知ってるよ！"+"<br>"+"僕もNPCとして一緒にやりたいですね！";
 		break;
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+		case 8:
+		if(tarea == "ソース"){
+			document.getElementById("text").innerHTML = "ソースですか、僕もソース（コード）をかけて食べるんだw";
+		}
+		else if(tarea == "塩コショウ"){
+			document.getElementById("text").innerHTML = "塩コショウも美味しいよね!";
+		}
+		else if(tarea == "命"){
+			document.getElementById("text").innerHTML = "それならお前、命賭けてみろよ!";
+		}
+		
+		else{
+			document.getElementById("text").innerHTML = tarea+"もいいよね。";
+	　		}
+	　		
+	　	break;
+		
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+		case 9:
+		if(tarea == "機械語"){
+			document.getElementById("text").innerHTML = "1000101110101010110101010101010"+"<br>"+"（機械語をしゃべれるなんてやるね！）";
+		}
+		else{
+			document.getElementById("text").innerHTML = tarea+"もしゃべれるんですね、すごいですね！";
+	　		}
+	　		
+	　	break;
 	}
 }
